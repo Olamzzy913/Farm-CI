@@ -1531,6 +1531,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 2.1rem;
 }
 
+.text-\[24rem\] {
+  font-size: 24rem;
+}
+
+.text-\[2\.4rem\] {
+  font-size: 2.4rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1947,6 +1959,14 @@ html {
 
   .md\:text-\[5rem\] {
     font-size: 5rem;
+  }
+
+  .md\:text-\[3\.4rem\] {
+    font-size: 3.4rem;
+  }
+
+  .md\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
 
   .md\:leading-\[5rem\] {
