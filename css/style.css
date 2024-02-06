@@ -988,6 +988,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 70%;
 }
 
+.w-\[15rem\] {
+  width: 15rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1845,6 +1849,14 @@ html {
 
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .md\:w-\[4rem\] {
+    width: 4rem;
+  }
+
+  .md\:w-\[16rem\] {
+    width: 16rem;
   }
 
   .md\:max-w-\[720px\] {
