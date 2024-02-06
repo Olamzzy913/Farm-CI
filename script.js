@@ -5,8 +5,6 @@ const serviceFarm = document.getElementById('service');
 const section1 = document.querySelector('.section--1');
 const section2 = document.querySelector('.section--2');
 const nav = document.querySelector('.nav');
-const navMenu = document.querySelector('#navMenu');
-const navMenuClose = document.querySelector('#navMenuClose');
 
 
 ///////////////////////////////////////
@@ -71,25 +69,3 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 
-///////////////////////////////////////
-// Menu
-
- const navOverlay = document.querySelector('.navOverlay');
- const mainSection = document.querySelector('.main');
- const headerSection = document.querySelector('.header');
-
-navMenu.addEventListener('click',  () => {
-
- mainSection.classList.add("hidden");
- headerSection.classList.add("hidden");
- navOverlay.classList.add("block");
- navOverlay.classList.remove("hidden");
-})
-
-navMenuClose.addEventListener('click',  () => {
-
- mainSection.classList.remove("hidden");
- headerSection.classList.remove("hidden");
- navOverlay.classList.remove("block");
- navOverlay.classList.add("hidden");
-})
