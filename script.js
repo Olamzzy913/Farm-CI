@@ -69,3 +69,28 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 
+///////////////////////////////////////
+// Service sections
+
+const btns = document.querySelectorAll('#btn');
+const serContent1 = document.querySelector('.service_content--1');
+const serContent2 = document.querySelector('.service_content--2');
+
+// btns.forEach(function (btn) {
+//   btn.addEventListener('click', () => {
+//     if(!serContent2.className.contains) return
+//     alert('hey')
+
+//   })
+// })
+
+
+// btn.addEventListener('click', function(e) {
+//   e.preventDefault();
+//   alert('hey')
+
+// })
+
+window.addEventListener('onload', () => {
+   window.scrollTo(0, 0);
+})

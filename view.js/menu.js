@@ -15,8 +15,7 @@ navMenu.addEventListener('click',  () => {
 
  mainSection.classList.add("hidden");
  headerSection.classList.add("hidden");
- navOverlay.classList.add("block");
- navOverlay.classList.remove("hidden");
+ navOverlay.classList.remove("section--hidden--overlay");
  window.scrollTo(0, 0);
 })
 
@@ -24,8 +23,7 @@ navMenuClose.addEventListener('click',  () => {
 
  mainSection.classList.remove("hidden");
  headerSection.classList.remove("hidden");
- navOverlay.classList.remove("block");
- navOverlay.classList.add("hidden");
+ navOverlay.classList.add("section--hidden--overlay");
 })
 
 

@@ -34,7 +34,7 @@ html {
   }
 
   .header_section {
-    @apply max-w-[135rem] w-full grid lg:grid-cols-2 gap-3 items-center my-auto md:px-[6rem];
+    @apply max-w-[135rem] grid lg:grid-cols-2 gap-3 items-center my-auto md:px-[6rem];
   }
 
   .section {
@@ -140,9 +140,17 @@ html {
   transform: translateY(8rem);
 }
 
-#section {
+.section--hidden--overlay {
+  display: none;
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+
+#section, .navOverlay {
   transition: transform 1s, opacity 1s;
 }
+
 
 .nav.sticky {
   position: fixed;

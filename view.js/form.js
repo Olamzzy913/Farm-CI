@@ -6,9 +6,7 @@ const btnProfileContexts = document.querySelectorAll('#btnProfileContext');
 const overlay1 = document.querySelector('.modal1');
 const overlay2 = document.querySelector('.modal2');
 const overlayModel = document.querySelector('.overlayModel');
-const btnClose = document.querySelector('.bx-x');
-const navMenu = document.querySelector('#navMenu');
-const navMenuClose = document.querySelector('#navMenuClose');
+const btnClose = document.querySelector('.closeBtn');
 
 
 ///////////////////////////////////////
@@ -24,29 +22,20 @@ btnClose.addEventListener('click', function(e) {
 
 ///////////////////////////////////////
 // open overlay1
-// btnProfileContexts.forEach((btnProfileContext) => {
-//    e.preventDefault();
-  
-//   btnProfileContext.addEventListener('click', function (e) {
-//       e.preventDefault();
-//       overlayModel.classList.add("fixed");
-//       overlayModel.classList.remove("hidden");
-//       overlay2.classList.remove("hidden");
-//       overlay2.classList.add("flex");
-//       overlay1.classList.add("hidden");
-//       overlay1.classList.remove("flex");
-// })
-// });
 
-// btnProfileContexts.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   overlayModel.classList.add("fixed");
-//   overlayModel.classList.remove("hidden");
-//   overlay2.classList.remove("hidden");
-//   overlay2.classList.add("flex");
-//   overlay1.classList.add("hidden");
-//   overlay1.classList.remove("flex");
-// });
+
+btnProfileContexts.forEach(function (btnProfileContext) {
+  btnProfileContext.addEventListener('click', () => {
+      overlayModel.classList.add("fixed");
+      overlayModel.classList.remove("hidden");
+      overlay2.classList.remove("hidden");
+      overlay2.classList.add("flex");
+      overlay1.classList.add("hidden");
+      overlay1.classList.remove("flex");
+
+  })
+})
+
 
 
 ///////////////////////////////////////
@@ -74,22 +63,22 @@ e.preventDefault();
   verifyEmailSection.classList.add("flex");
 });
 
- const navOverlay = document.querySelector('.navOverlay');
- const mainSection = document.querySelector('.main');
- const headerSection = document.querySelector('.header');
+//  const navOverlay = document.querySelector('.navOverlay');
+//  const mainSection = document.querySelector('.main');
+//  const headerSection = document.querySelector('.header');
 
-navMenu.addEventListener('click',  () => {
+// navMenu.addEventListener('click',  () => {
 
- mainSection.classList.add("hidden");
- headerSection.classList.add("hidden");
- navOverlay.classList.add("block");
- navOverlay.classList.remove("hidden");
-})
+//  mainSection.classList.add("hidden");
+//  headerSection.classList.add("hidden");
+//  navOverlay.classList.add("block");
+//  navOverlay.classList.remove("hidden");
+// })
 
-navMenuClose.addEventListener('click',  () => {
+// navMenuClose.addEventListener('click',  () => {
 
- mainSection.classList.remove("hidden");
- headerSection.classList.remove("hidden");
- navOverlay.classList.remove("block");
- navOverlay.classList.add("hidden");
-})
+//  mainSection.classList.remove("hidden");
+//  headerSection.classList.remove("hidden");
+//  navOverlay.classList.remove("block");
+//  navOverlay.classList.add("hidden");
+// })
